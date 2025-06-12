@@ -1,0 +1,97 @@
+body {
+  box-sizing: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsla(187, 67%, 16%, 1);
+  background-image: radial-gradient(
+      at 80% 25%,
+      hsla(187, 54%, 20%, 0.37) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 23% 70%, hsla(187, 46%, 11%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(184, 87%, 3%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(184, 69%, 5%, 1) 0px, transparent 50%);
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: var(--text-color);
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 55px;
+  margin: 0;
+}
+h3 {
+  color: var(--text-color);
+  font-size: 30px;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  margin-top: 0.5em;
+}
+.info-section {
+  margin: 7em 5em 0 12em;
+}
+.me {
+  font-family: "Josefin Sans";
+  color: white;
+  /* padding: 0 5em; */
+}
+
+.info-text {
+  color: var(--text-color);
+  font-size: 18px;
+  width: 25em;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+
+.resume-btn {
+  background-color: #32565a;
+  color: var(--text-color);
+  padding: 0.5em 1.5em;
+  border-radius: 10px;
+  border: solid 1px white;
+  margin-top: 2em;
+}
+.link {
+  margin-top: 1.5em;
+  display: flex;
+  gap: 1em;
+}
+.github {
+  color: white;
+  height: 2em;
+  width: 2em;
+}
+.linkedin {
+  color: white;
+  height: 2em;
+  width: 2em;
+}
+
+.tech {
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 1.5em;
+}
+
+.knowledge-list {
+  display: flex;
+  gap: 1em;
+  margin-top: 3 em;
+  flex-wrap: wrap;
+}
+
+.knowledge-btn {
+  background-color: rgba(167, 238, 228, 0.063);
+  color: var(--text-color);
+  border-radius: 10px;
+  border: none;
+  padding: 10px 15px;
+  text-decoration: none;
+}

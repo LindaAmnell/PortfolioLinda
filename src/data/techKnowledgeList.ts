@@ -1,0 +1,17 @@
+export const techKnowledgeList = [
+  { text: "JavaScript" },
+  { text: "TypeScript" },
+  { text: "HTML" },
+  { text: "CSS" },
+  { text: "React" },
+  { text: "React Native" },
+  { text: "REST API" },
+  { text: "Node.js" },
+  { text: "Express" },
+  { text: "Cypress" },
+  { text: "Jest" },
+  { text: "Firestore" },
+  { text: "Figma" },
+  { text: "MongoDB" },
+  { text: "Material UI" },
+];
