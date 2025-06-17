@@ -1,10 +1,8 @@
-// import "../css/index.css";
 import "../css/aboutMe.css";
 
 const AboutMe = () => {
   return (
     <section>
-      <h2>About me</h2>
       <div className="about-me-text">
         <p>
           Hi! I'm a frontend developer with a keen eye for design and a strong

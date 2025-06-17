@@ -1,0 +1,74 @@
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 200;
+  color: #fbfdff;
+  font-style: normal;
+  font-optical-sizing: auto;
+  opacity: 0.8;
+  text-shadow: 0 0 2px rgba(226, 228, 230, 0.4);
+}
+
+.job-title {
+  font-weight: 400;
+  font-size: 23px;
+  margin-bottom: 0;
+}
+
+.date {
+  margin-top: 0;
+  font-weight: 100;
+  font-size: 17px;
+}
+.techStack-list {
+  display: flex;
+  gap: 1em;
+  margin-top: 3em;
+  flex-wrap: wrap;
+}
+
+.techStack {
+  background: linear-gradient(
+    135deg,
+    rgba(167, 238, 228, 0.2),
+    rgba(167, 238, 228, 0.05)
+  );
+  color: var(--text-color);
+  border-radius: 10px;
+  border: 0.5px solid rgba(167, 238, 228, 0.25);
+  padding: 7px 14px;
+  font-size: 14px;
+  cursor: default;
+  user-select: none;
+  box-shadow: 0 0 6px rgba(167, 238, 228, 0.3);
+}
+
+.project-buttons {
+  display: flex;
+  gap: 1em;
+  margin-top: 1.5em;
+  flex-wrap: wrap;
+}
+
+.project-button {
+  background-color: rgba(167, 238, 228, 0.3);
+  color: var(--text-color);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 16px; /* mindre padding */
+  font-size: 14px; /* lite mindre text */
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 4px rgba(167, 238, 228, 0.4);
+}
+
+.project-button:hover {
+  background-color: rgba(167, 238, 228, 0.45);
+  transform: scale(1.05); /* mindre scale */
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 8px rgba(167, 238, 228, 0.6);
+}

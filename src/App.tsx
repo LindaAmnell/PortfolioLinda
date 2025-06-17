@@ -1,42 +1,33 @@
 import "./css/index.css";
+import "./css/fadeAnimation.css";
+import "./css/App.css";
 import AboutMe from "./components/AboutMe";
 import Info from "./components/Info";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import { useState } from "react";
+import HeaderLinks from "./components/HeaderLinks";
+import type { Section } from "./data/headerLinks";
 
 function App() {
-  const [activeSection, setActiveSection] = useState("about");
+  const [activeSection, setActiveSection] = useState<Section>("about");
 
   return (
     <main className="start">
-      <div>
+      <div className="header">
         <Info />
-        <div>
-          <nav className="links">
-            <button
-              className={activeSection === "about" ? "active" : ""}
-              onClick={() => setActiveSection("about")}>
-              About me
-            </button>
-            <button
-              className={activeSection === "experience" ? "active" : ""}
-              onClick={() => setActiveSection("experience")}>
-              Experience
-            </button>
-            <button
-              className={activeSection === "projects" ? "active" : ""}
-              onClick={() => setActiveSection("projects")}>
-              Projects
-            </button>
-          </nav>
-        </div>
       </div>
+      <div className="content-section">
+        <HeaderLinks
+          activeSection={activeSection}
+          setActiveSection={setActiveSection}
+        />
 
-      <div>
-        {activeSection === "about" && <AboutMe />}
-        {activeSection === "experience" && <Experience />}
-        {activeSection === "projects" && <Projects />}
+        <div key={activeSection} className="fade-in">
+          {activeSection === "about" && <AboutMe />}
+          {activeSection === "experience" && <Experience />}
+          {activeSection === "projects" && <Projects />}
+        </div>
       </div>
     </main>
   );

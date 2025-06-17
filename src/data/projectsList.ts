@@ -1,0 +1,105 @@
+export const projects = [
+  {
+    isPrivate: false,
+    title: "Go Ghibli – Mini Project ",
+    description: [
+      "A frontend application built with React and TypeScript that displays movies from Studio Ghibli using the Go Ghibli API.",
+      "The project focused on strict typing, data validation with Joi, and features like movie search, detailed views, and favorite management.",
+      "Users can mark favorite movies, sort them.",
+    ],
+    techStack: ["React", "TypeScript", "Joi", "CSS"],
+    gitHubLink: "https://lindaamnell.github.io/GoGhibli/",
+  },
+  {
+    title: "Individual Assignment – Chappy",
+    description: [
+      "Build an API and frontend for a chat app where users can send messages to specific users or channels.",
+      "Guests can read and send messages in open channels; logged-in users can also use locked channels and direct messages.",
+      "Technologies: MERN stack (MongoDB, Express, React, Node), Joi for validation, JWT for authentication, React Router.",
+      "Publish the app online and present it to the instructor.",
+      "Phased requirements for Pass and Pass with Distinction with added features like channel creation, emoji reactions, and image support.",
+    ],
+    techStack: [
+      "MongoDB",
+      "Express",
+      "React",
+      "Node.js",
+      "Joi",
+      "JWT",
+      "React Router",
+      "Zustand ",
+    ],
+    gitHubLink: "https://github.com/your-username/chappy-chat-app",
+  },
+  {
+    title: "Individual Assignment – Summer Toys Webshop",
+    description: [
+      "Build a webshop selling summer toys using React, React Router (HashRouter), a state manager (Zustand, Context or Redux), and Firestore.",
+      "The webshop should support two user types: customers and administrators.",
+      "Customers do not need to log in (Pass), administrators must log in (Distinction).",
+      "Responsive design, at least 20 realistic products, validated forms, no page reloads or direct DOM manipulation.",
+      "Deploy the app using GitHub Pages.",
+      "Participate in test groups to give feedback on design, code, and user flows.",
+    ],
+    techStack: [
+      "React",
+      "React Router (HashRouter)",
+      "Zustand / Context / Redux",
+      "Firestore",
+      "Styled Components / MUI (optional)",
+    ],
+    gitHubLink: "https://github.com/your-username/summer-toys-webshop",
+  },
+  {
+    title: "Group Project – Restaurant Menu with React & Zustand",
+    description: [
+      "Frontend app for a fictional restaurant where visitors can see the menu, ingredients, images, and prices.",
+      "Employees can log in (password 'mums') to add, delete, and edit dishes.",
+      "All forms must be validated using React Hook Form and Joi.",
+      "Responsive UI, data is fetched and saved via JSON API.",
+      "The project follows Scrum/agile methodology and is deployed on GitHub Pages.",
+    ],
+    techStack: [
+      "React",
+      "Zustand",
+      "React Router",
+      "React Hook Form",
+      "Joi",
+      "GitHub Pages",
+    ],
+    gitHubLink: "https://github.com/your-username/restaurant-menu-app",
+  },
+  {
+    title: "Pokémon Team Manager",
+    description: [
+      "A Single Page Application to build Pokémon teams using data fetched from the Pokéapi.",
+      "Users can search for Pokémon by name, add them to a team with nicknames, and manage both active team members and reserves.",
+      "The app features responsive design, a smart search, team completeness indicators, and no page reloads.",
+      "Published online via GitHub Pages with branching and version control best practices.",
+    ],
+    techStack: ["JavaScript", "HTML", "CSS", "Pokéapi", "GitHub Pages"],
+    gitHubLink: "https://github.com/your-username/pokemon-team-manager",
+  },
+  {
+    title: "Hangman Game",
+    description: [
+      "A browser-based Hangman word guessing game with multiple difficulty levels.",
+      "Features include keyboard input, hint system, score tracking, and responsive design.",
+      "The game logic is implemented in vanilla JavaScript with a clean UI and user-friendly interactions.",
+    ],
+    techStack: ["JavaScript", "HTML", "CSS"],
+    gitHubLink: "https://github.com/your-username/hangman-game",
+  },
+
+  {
+    isPrivate: false,
+    title: "Black Valley",
+    description: [
+      "A graduation project developed by me and a classmate using React Native for a friend who runs a Swedish craft brand focused on handmade dog accessories.",
+      "The app provides a clean, mobile-optimized user experience with modular components for browsing products, viewing galleries, and submitting custom orders.",
+      "Key features include dynamic order forms with personalized embroidery options, dog measurements, and Swish payment integration – designed for lightweight deployment and maintenance.",
+    ],
+    techStack: ["React Native", "JavaScript", "Expo", "CSS-in-JS"],
+    webLink: "https://www.blackvalley.nu/",
+  },
+];

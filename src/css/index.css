@@ -4,7 +4,7 @@
 }
 section {
   font-family: "Josefin Sans";
-  margin: 7em 12em 0 2em;
+  margin: 0em 12em 0 2em;
 }
 h2 {
   font-size: 30px;
@@ -13,32 +13,4 @@ h2 {
   margin-top: 0.5em;
   place-self: center;
   color: white;
-}
-
-.links {
-  display: flex;
-  flex-direction: row;
-  margin: 2em 2em 0 12em;
-  gap: 1em;
-}
-nav button {
-  font-family: "Josefin Sans";
-  background: none;
-  border: none;
-  color: #e2e6ea;
-  cursor: pointer;
-  font-size: 30px;
-  text-decoration: none;
-  font-weight: 100;
-  outline: none;
-  padding: 0;
-}
-
-nav button:hover {
-  text-decoration: underline;
-}
-
-nav button.active {
-  text-decoration: underline;
-  font-weight: 300;
 }
