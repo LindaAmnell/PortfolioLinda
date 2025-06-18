@@ -1,7 +1,7 @@
 .links {
   display: flex;
   flex-direction: row;
-  margin: 6em 18em 2em 2em;
+  margin: 6em 0em 2em 2em;
   gap: 3em;
 }
 nav button {
@@ -48,4 +48,16 @@ nav button.active {
 nav button.active::after {
   transform: scaleX(1);
   background-color: #ffffff;
+}
+
+@media (max-width: 1350px) {
+  .links {
+    margin: 6em 0em 2em 0em;
+    gap: 1.5em;
+  }
+}
+@media (max-width: 1000px) {
+  .links {
+    display: none;
+  }
 }

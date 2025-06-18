@@ -23,10 +23,20 @@ function App() {
           setActiveSection={setActiveSection}
         />
 
-        <div key={activeSection} className="fade-in">
-          {activeSection === "about" && <AboutMe />}
-          {activeSection === "experience" && <Experience />}
-          {activeSection === "projects" && <Projects />}
+        <div className="fade-in responsive-sections">
+          {window.innerWidth > 1000 ? (
+            <>
+              {activeSection === "about" && <AboutMe />}
+              {activeSection === "experience" && <Experience />}
+              {activeSection === "projects" && <Projects />}
+            </>
+          ) : (
+            <>
+              <AboutMe />
+              <Experience />
+              <Projects />
+            </>
+          )}
         </div>
       </div>
     </main>

@@ -4,6 +4,9 @@ const Experience = () => {
   return (
     <section>
       <div className="text-standard">
+        <div className="title-line">
+          <h2 className="title">Experience</h2>
+        </div>
         <div>
           <h3 className="title-standard">Frontend Intern - Rapid Images</h3>
           <p className="date">Nov 24 - Jan 25</p>

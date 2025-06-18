@@ -6,7 +6,7 @@ const Info = () => {
   return (
     <div className="info-section">
       <div className="me">
-        <h1>LINDA AMNELL</h1>
+        <h1 className="title-large">LINDA AMNELL</h1>
         <h3 className="title-medium ">Frontend Developer</h3>
 
         <p className="text-standard">
@@ -15,10 +15,26 @@ const Info = () => {
           responsiveness.
         </p>
         <div>
-          <button className="btn-base">Resume</button>
+          <a
+            href="/PortfolioLinda/Cv-Linda-En.pdf"
+            download
+            className="btn-base">
+            Resume
+          </a>
+
           <div className="link">
-            <FaGithub className="github" />
-            <FaLinkedin className="linkedin" />
+            <a
+              href="https://github.com/LindaAmnell"
+              target="_blank"
+              rel="noopener noreferrer">
+              <FaGithub className="github" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/linda-amnell-54a803297/"
+              target="_blank"
+              rel="noopener noreferrer">
+              <FaLinkedin className="linkedin" />
+            </a>
           </div>
           <div>
             <p className="tech">Technical knowledge</p>

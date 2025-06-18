@@ -40,7 +40,28 @@ section {
   margin-top: 0;
   color: white;
 }
+.title-line {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  margin: 2rem 0; /* valfritt spacing */
+}
 
+.title-line::before,
+.title-line::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ccc; /* eller en annan färg */
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0; /* så den inte puttar ner linjerna */
+  white-space: nowrap; /* så texten inte bryts */
+}
 .btn-base {
   background-color: rgba(167, 238, 228, 0.3);
   border-radius: 10px;
@@ -83,4 +104,39 @@ section {
   border: none;
   padding: 10px 15px;
   color: white;
+}
+
+@media (max-width: 1600px) {
+  section {
+    margin: 0em 10em 4em 2em;
+  }
+}
+@media (max-width: 1350px) {
+  section {
+    margin: 0em 5em 4em 0em;
+  }
+  .title-large {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .start {
+    grid-template-columns: 1fr;
+    place-content: center;
+  }
+  section {
+    /* place-items: center; */
+    margin: 1em 6em;
+  }
+}
+
+@media (max-width: 550px) {
+  section {
+    margin: 1em;
+  }
+  .badge-button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
 }

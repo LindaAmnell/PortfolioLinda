@@ -27,15 +27,6 @@ body {
   background-size: cover;
 }
 
-h1 {
-  color: var(--text-color);
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 55px;
-  margin: 0;
-}
-
 .info-section {
   margin: 6em 5em 0 18em;
 }
@@ -67,4 +58,24 @@ h1 {
   font-size: 20px;
   font-weight: 100;
   margin-top: 1.5em;
+}
+
+@media (max-width: 1600px) {
+  .info-section {
+    margin: 6em 5em 0 10em;
+  }
+}
+@media (max-width: 1350px) {
+  .info-section {
+    margin: 3em 6em;
+  }
+  .header {
+    position: relative;
+  }
+}
+
+@media (max-width: 550px) {
+  .info-section {
+    margin: 1em;
+  }
 }

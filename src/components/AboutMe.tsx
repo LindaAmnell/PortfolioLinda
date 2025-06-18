@@ -1,9 +1,10 @@
-import "../css/aboutMe.css";
-
 const AboutMe = () => {
   return (
     <section>
       <div className="text-standard">
+        <div className="title-line">
+          <h2 className="title">About me</h2>
+        </div>
         <p>
           Hi! I'm a frontend developer with a keen eye for design and a strong
           focus on creating smooth, user-friendly experiences. I recently
@@ -11,8 +12,7 @@ const AboutMe = () => {
           foundation in modern web technologies—especially React, TypeScript,
           HTML, and CSS.
         </p>
-
-        <p>
+        {/* <p>
           During my internship at Etraveli Group, I had the opportunity to work
           closely with a development team, contributing to real products and
           sharpening my skills in building scalable and maintainable frontend
@@ -20,7 +20,7 @@ const AboutMe = () => {
           Images, where I was responsible for rebuilding the admin interface.
           These experiences taught me a lot about real-world development,
           teamwork, and working with larger codebases.
-        </p>
+        </p> */}
         <p>
           I'm someone who enjoys solving problems and constantly learning new
           things. I care about the details, whether it's polishing a component

@@ -5,6 +5,9 @@ import { FaGithub } from "react-icons/fa";
 const Projects = () => {
   return (
     <section className="projects-section">
+      <div className="title-line">
+        <h2 className="title ">Projects</h2>
+      </div>
       <div className="project">
         {projects.map((project, index) => (
           <div className="project-card" key={index}>
