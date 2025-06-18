@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 const Projects = () => {
   return (
     <section className="projects-section">
-      <div className="title-line">
+      <div className="title-line mobile-only">
         <h2 className="title ">Projects</h2>
       </div>
       <div className="project">

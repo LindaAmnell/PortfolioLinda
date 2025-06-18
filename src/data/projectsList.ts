@@ -20,7 +20,6 @@ export const projects = [
       "React",
       "Node.js",
       "Joi",
-      "JWT",
       "React Router",
       "Zustand",
     ],

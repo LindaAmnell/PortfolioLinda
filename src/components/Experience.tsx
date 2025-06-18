@@ -4,7 +4,7 @@ const Experience = () => {
   return (
     <section>
       <div className="text-standard">
-        <div className="title-line">
+        <div className="title-line mobile-only">
           <h2 className="title">Experience</h2>
         </div>
         <div>

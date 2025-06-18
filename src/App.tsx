@@ -5,12 +5,22 @@ import AboutMe from "./components/AboutMe";
 import Info from "./components/Info";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import HeaderLinks from "./components/HeaderLinks";
 import type { Section } from "./data/headerLinks";
 
 function App() {
   const [activeSection, setActiveSection] = useState<Section>("about");
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1000);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1000);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <main className="start">
@@ -24,17 +34,17 @@ function App() {
         />
 
         <div className="fade-in responsive-sections">
-          {window.innerWidth > 1000 ? (
-            <>
-              {activeSection === "about" && <AboutMe />}
-              {activeSection === "experience" && <Experience />}
-              {activeSection === "projects" && <Projects />}
-            </>
-          ) : (
+          {isMobile ? (
             <>
               <AboutMe />
               <Experience />
               <Projects />
+            </>
+          ) : (
+            <>
+              {activeSection === "about" && <AboutMe />}
+              {activeSection === "experience" && <Experience />}
+              {activeSection === "projects" && <Projects />}
             </>
           )}
         </div>

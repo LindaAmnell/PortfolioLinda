@@ -2,7 +2,7 @@ const AboutMe = () => {
   return (
     <section>
       <div className="text-standard">
-        <div className="title-line">
+        <div className="title-line mobile-only">
           <h2 className="title">About me</h2>
         </div>
         <p>
@@ -12,15 +12,6 @@ const AboutMe = () => {
           foundation in modern web technologies—especially React, TypeScript,
           HTML, and CSS.
         </p>
-        {/* <p>
-          During my internship at Etraveli Group, I had the opportunity to work
-          closely with a development team, contributing to real products and
-          sharpening my skills in building scalable and maintainable frontend
-          solutions. Before that, I worked on the IKEA Upplysa project at Rapid
-          Images, where I was responsible for rebuilding the admin interface.
-          These experiences taught me a lot about real-world development,
-          teamwork, and working with larger codebases.
-        </p> */}
         <p>
           I'm someone who enjoys solving problems and constantly learning new
           things. I care about the details, whether it's polishing a component

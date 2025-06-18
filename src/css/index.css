@@ -45,7 +45,7 @@ section {
   align-items: center;
   text-align: center;
   gap: 1rem;
-  margin: 2rem 0; /* valfritt spacing */
+  margin: 2rem 0;
 }
 
 .title-line::before,
@@ -53,15 +53,19 @@ section {
   content: "";
   flex: 1;
   height: 1px;
-  background: #ccc; /* eller en annan färg */
+  background: #ccc;
 }
 
 .title {
   font-size: 25px;
   font-weight: 400;
-  margin: 0; /* så den inte puttar ner linjerna */
-  white-space: nowrap; /* så texten inte bryts */
+  margin: 0;
+  white-space: nowrap;
 }
+.mobile-only {
+  display: none;
+}
+
 .btn-base {
   background-color: rgba(167, 238, 228, 0.3);
   border-radius: 10px;
@@ -120,14 +124,16 @@ section {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1000px) {
   .start {
     grid-template-columns: 1fr;
     place-content: center;
   }
   section {
-    /* place-items: center; */
     margin: 1em 6em;
+  }
+  .mobile-only {
+    display: flex;
   }
 }
 
