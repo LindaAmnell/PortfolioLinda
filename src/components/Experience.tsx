@@ -3,9 +3,9 @@ import "../css/experience.css";
 const Experience = () => {
   return (
     <section>
-      <div className="text">
+      <div className="text-standard">
         <div>
-          <h3 className="job-title">Frontend Intern - Rapid Images</h3>
+          <h3 className="title-standard">Frontend Intern - Rapid Images</h3>
           <p className="date">Nov 24 - Jan 25</p>
           <p>
             Worked on the Upplysa project for IKEA using React and TypeScript. I

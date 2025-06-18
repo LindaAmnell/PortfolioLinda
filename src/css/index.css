@@ -3,14 +3,84 @@
   grid-template-columns: 1fr 1fr;
 }
 section {
-  font-family: "Josefin Sans";
-  margin: 0em 12em 0 2em;
+  margin: 0em 18em 4em 2em;
 }
-h2 {
+
+.text-standard {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 200;
+  color: #fbfdff;
+  font-style: normal;
+  font-optical-sizing: auto;
+  opacity: 0.8;
+  text-shadow: 0 0 2px rgba(226, 228, 230, 0.4);
+}
+
+.title-large {
+  font-size: 55px;
+  font-weight: 300;
+  margin: 0;
+  font-style: normal;
+  font-optical-sizing: auto;
+  color: var(--text-color);
+}
+
+.title-medium {
   font-size: 30px;
-  font-weight: 500;
+  font-optical-sizing: auto;
+  font-weight: 100;
   font-style: normal;
   margin-top: 0.5em;
-  place-self: center;
+}
+.title-standard {
+  font-size: 23px;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: white;
+}
+
+.btn-base {
+  background-color: rgba(167, 238, 228, 0.3);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 5px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 4px rgba(167, 238, 228, 0.4);
+  text-decoration: none;
+  align-content: center;
+  color: white;
+}
+
+.btn-base:hover {
+  background-color: rgba(167, 238, 228, 0.45);
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 8px rgba(167, 238, 228, 0.6);
+}
+.badge-list {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.badge-button {
+  background: linear-gradient(
+    135deg,
+    rgba(167, 238, 228, 0.2),
+    rgba(167, 238, 228, 0.05)
+  );
+  border: 0.5px solid rgba(167, 238, 228, 0.25);
+  font-size: 14px;
+  cursor: default;
+  user-select: none;
+  box-shadow: 0 0 6px rgba(167, 238, 228, 0.3);
+  border-radius: 10px;
+  border: none;
+  padding: 10px 15px;
   color: white;
 }

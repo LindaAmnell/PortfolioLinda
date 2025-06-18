@@ -1,5 +1,13 @@
-body {
-  margin: 0;
+body,
+h1,
+h2,
+h3,
+h4,
+section,
+.project,
+.me {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
 }
 
 body {
@@ -27,51 +35,23 @@ h1 {
   font-size: 55px;
   margin: 0;
 }
-h3 {
-  color: var(--text-color);
-  font-size: 30px;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-  margin-top: 0.5em;
-}
+
 .info-section {
-  margin: 5em 5em 0 12em;
+  margin: 6em 5em 0 18em;
 }
 
 .header {
-  width: 90%;
   position: sticky;
   top: 0;
-  height: 25%;
+  height: 10%;
 }
 
-.me {
-  font-family: "Josefin Sans";
-  color: white;
-}
-
-.info-text {
-  color: var(--text-color);
-  font-size: 18px;
-  width: 25em;
-  letter-spacing: 2px;
-  font-weight: 200;
-}
-
-.resume-btn {
-  background-color: #32565a;
-  color: var(--text-color);
-  padding: 0.5em 1.5em;
-  border-radius: 10px;
-  border: solid 1px white;
-  margin-top: 2em;
-}
 .link {
   margin-top: 1.5em;
   display: flex;
   gap: 1em;
 }
+
 .github {
   color: white;
   height: 2em;
@@ -87,28 +67,4 @@ h3 {
   font-size: 20px;
   font-weight: 100;
   margin-top: 1.5em;
-}
-
-.knowledge-list {
-  display: flex;
-  gap: 1em;
-  margin-top: 3 em;
-  flex-wrap: wrap;
-}
-
-.knowledge-btn {
-  background: linear-gradient(
-    135deg,
-    rgba(167, 238, 228, 0.2),
-    rgba(167, 238, 228, 0.05)
-  );
-  color: var(--text-color);
-  border: 0.5px solid rgba(167, 238, 228, 0.25);
-  font-size: 14px;
-  cursor: default;
-  user-select: none;
-  box-shadow: 0 0 6px rgba(167, 238, 228, 0.3);
-  border-radius: 10px;
-  border: none;
-  padding: 10px 15px;
 }
