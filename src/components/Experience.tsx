@@ -1,4 +1,5 @@
 import "../css/experience.css";
+import { experienceList } from "../data/experienceList";
 
 const Experience = () => {
   return (
@@ -7,38 +8,18 @@ const Experience = () => {
         <div className="title-line mobile-only">
           <h2 className="title">Experience</h2>
         </div>
-        <div>
-          <h3 className="title-standard">Frontend Intern - Rapid Images</h3>
-          <p className="date">Nov 24 - Jan 25</p>
-          <p>
-            Worked on the Upplysa project for IKEA using React and TypeScript. I
-            helped rebuild an internal admin page, gaining practical experience
-            with frontend structure, component-based UI, and handling real
-            content.
-          </p>
-          <p>
-            During the internship, I worked with the team following Scrum, which
-            improved my teamwork and understanding of agile ways of working.
-            This experience helped me get better at organizing code, working
-            with others, and handling real development tasks.
-          </p>
-        </div>
-        <div>
-          <h3 className="job-title">Frontend Intern - Etraveli Group</h3>
-          <p className="date">Mar 25 - Jun 25</p>
-          <p>
-            Worked on the Upplysa project for IKEA using React and TypeScript. I
-            helped rebuild an internal admin page, gaining practical experience
-            with frontend structure, component-based UI, and handling real
-            content.
-          </p>
-          <p>
-            During the internship, I worked with the team following Scrum, which
-            improved my teamwork and understanding of agile ways of working.
-            This experience helped me get better at organizing code, working
-            with others, and handling real development tasks.
-          </p>
-        </div>
+
+        {experienceList.map((item, index) => (
+          <div className="experience-card" key={index}>
+            <h3 className="title-standard">
+              {item.title} - {item.company}
+            </h3>
+            <p className="date">{item.date}</p>
+            {item.description.map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
+          </div>
+        ))}
       </div>
     </section>
   );

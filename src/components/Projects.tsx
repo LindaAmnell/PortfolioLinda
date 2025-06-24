@@ -11,6 +11,16 @@ const Projects = () => {
       <div className="project">
         {projects.map((project, index) => (
           <div className="project-card" key={index}>
+            {project.image && (
+              <div className="project-image-container">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-image"
+                />
+              </div>
+            )}
+
             <h3 className="title-standard">{project.title}</h3>
             {project.description.map((text, i) => (
               <p className="text-standard" key={i}>

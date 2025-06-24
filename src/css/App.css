@@ -13,15 +13,16 @@ section,
 body {
   min-height: 100vh;
   margin: 0;
-  background-color: hsla(187, 67%, 16%, 1);
-  background-image: radial-gradient(
-      at 80% 25%,
-      hsla(187, 54%, 20%, 0.37) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 23% 70%, hsla(187, 46%, 11%, 1) 0px, transparent 50%),
-    radial-gradient(at 80% 100%, hsla(184, 87%, 3%, 1) 0px, transparent 50%),
-    radial-gradient(at 0% 0%, hsla(184, 69%, 5%, 1) 0px, transparent 50%);
+  background: #0d2226;
+  background: linear-gradient(
+    192deg,
+    rgb(1, 14, 17) 0%,
+    rgb(2, 48, 53) 16%,
+    rgb(4, 52, 54) 33%,
+    rgba(1, 38, 37, 0.88) 52%,
+    rgb(2, 39, 35) 83%,
+    rgb(2, 28, 27) 100%
+  );
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
