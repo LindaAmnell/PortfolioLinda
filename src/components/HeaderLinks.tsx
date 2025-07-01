@@ -1,19 +1,23 @@
 import React from "react";
 import "../css/links.css";
-import { sections, type Section } from "../data/headerLinks";
+import { sections, sectionsSv, type Section } from "../data/headerLinks";
 
 type SectionNavProps = {
   activeSection: Section;
   setActiveSection: (section: Section) => void;
+  language?: "en" | "sv";
 };
 
 const HeaderLinks: React.FC<SectionNavProps> = ({
   activeSection,
   setActiveSection,
+  language = "en",
 }) => {
+  const currentSections = language === "sv" ? sectionsSv : sections;
+
   return (
     <nav className="links">
-      {sections.map((section) => (
+      {currentSections.map((section) => (
         <button
           key={section.id}
           className={activeSection === section.id ? "active" : ""}

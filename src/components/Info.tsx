@@ -1,25 +1,34 @@
-// import "../css/App.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { techKnowledgeList } from "../data/techKnowledgeList";
+import { infoText } from "../data/EnSweList";
 
-const Info = () => {
+type Language = "en" | "sv";
+
+interface InfoProps {
+  language?: Language;
+}
+
+const Info = ({ language = "en" }: InfoProps) => {
+  const text = infoText[language];
+
   return (
     <div className="info-section">
       <div className="me">
-        <h1 className="title-large">LINDA AMNELL</h1>
-        <h3 className="title-medium ">Frontend Developer</h3>
+        <h1 className="title-large">{text.name}</h1>
+        <h3 className="title-medium">{text.title}</h3>
 
-        <p className="text-standard">
-          I'm a frontend developer who enjoys solving problems and building
-          clear, functional interfaces with a focus on usability and
-          responsiveness.
-        </p>
+        <p className="text-standard">{text.description}</p>
+
         <div>
           <a
-            href="/PortfolioLinda/Cv-Linda-En.pdf"
+            href={
+              language === "sv"
+                ? "/PortfolioLinda/LindaAmnellCv.pdf"
+                : "/PortfolioLinda/LindaAmnellCvEn.pdf"
+            }
             download
             className="btn-base">
-            Resume
+            {text.resume}
           </a>
 
           <div className="link">
@@ -36,8 +45,9 @@ const Info = () => {
               <FaLinkedin className="linkedin" />
             </a>
           </div>
+
           <div>
-            <p className="tech">Technical knowledge</p>
+            <p className="tech">{text.tech}</p>
             <div className="badge-list">
               {techKnowledgeList.map((item, index) => (
                 <button className="badge-button" key={index}>

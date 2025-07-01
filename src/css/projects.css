@@ -70,3 +70,15 @@
 .project-card:hover .image-overlay {
   opacity: 0;
 }
+
+@media (hover: none) {
+  .project-image {
+    filter: grayscale(0%) brightness(100%);
+    transform: none;
+  }
+
+  .project-card:hover .project-image {
+    filter: grayscale(0%) brightness(100%);
+    transform: none;
+  }
+}

@@ -1,8 +1,10 @@
 import "../css/projects.css";
-import { projects } from "../data/projectsList";
+import { EnProjects, SvProjects } from "../data/projectsList";
 import { FaGithub } from "react-icons/fa";
 
-const Projects = () => {
+const Projects = ({ language = "en" }) => {
+  const projects = language === "sv" ? SvProjects : EnProjects;
+
   return (
     <section className="projects-section">
       <div className="title-line mobile-only">

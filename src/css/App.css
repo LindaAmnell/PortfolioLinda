@@ -43,7 +43,9 @@ body {
   display: flex;
   gap: 1em;
 }
-
+.switch-btn {
+  margin: 2em 5em 0 18em;
+}
 .github {
   color: white;
   height: 2em;
@@ -65,10 +67,16 @@ body {
   .info-section {
     margin: 6em 5em 0 10em;
   }
+  .switch-btn {
+    margin: 2em 5em 0 10em;
+  }
 }
 @media (max-width: 1350px) {
   .info-section {
     margin: 3em 6em;
+  }
+  .switch-btn {
+    margin: 2em 5em 0 6em;
   }
   .header {
     position: relative;
@@ -77,6 +85,9 @@ body {
 
 @media (max-width: 550px) {
   .info-section {
+    margin: 1em;
+  }
+  .switch-btn {
     margin: 1em;
   }
 }

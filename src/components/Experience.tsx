@@ -1,15 +1,19 @@
 import "../css/experience.css";
-import { experienceList } from "../data/experienceList";
+import { experienceList, experienceListSv } from "../data/experienceList";
 
-const Experience = () => {
+const Experience = ({ language = "en" }) => {
+  const currentList = language === "sv" ? experienceListSv : experienceList;
+
   return (
     <section>
       <div className="text-standard">
         <div className="title-line mobile-only">
-          <h2 className="title">Experience</h2>
+          <h2 className="title">
+            {language === "sv" ? "Erfarenhet" : "Experience"}
+          </h2>
         </div>
 
-        {experienceList.map((item, index) => (
+        {currentList.map((item, index) => (
           <div className="experience-card" key={index}>
             <h3 className="title-standard">
               {item.title} - {item.company}

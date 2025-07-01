@@ -12,6 +12,7 @@ import type { Section } from "./data/headerLinks";
 function App() {
   const [activeSection, setActiveSection] = useState<Section>("about");
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1000);
+  const [language, setLanguage] = useState<"en" | "sv">("en");
 
   useEffect(() => {
     const handleResize = () => {
@@ -22,29 +23,42 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const toggleLanguage = () => {
+    setLanguage((prev) => (prev === "en" ? "sv" : "en"));
+  };
+
   return (
     <main className="start">
       <div className="header">
-        <Info />
+        <Info language={language} />
+        <div className="switch-btn">
+          <button className="btn-base lang-btn" onClick={toggleLanguage}>
+            {language === "en" ? "Switch to Swedish" : "Switch to English"}
+          </button>
+        </div>
       </div>
+
       <div className="content-section">
         <HeaderLinks
           activeSection={activeSection}
           setActiveSection={setActiveSection}
+          language={language}
         />
 
         <div className="fade-in responsive-sections">
           {isMobile ? (
             <>
-              <AboutMe />
-              <Experience />
-              <Projects />
+              <AboutMe language={language} />
+              <Experience language={language} />
+              <Projects language={language} />
             </>
           ) : (
             <>
-              {activeSection === "about" && <AboutMe />}
-              {activeSection === "experience" && <Experience />}
-              {activeSection === "projects" && <Projects />}
+              {activeSection === "about" && <AboutMe language={language} />}
+              {activeSection === "experience" && (
+                <Experience language={language} />
+              )}
+              {activeSection === "projects" && <Projects language={language} />}
             </>
           )}
         </div>
