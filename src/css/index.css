@@ -75,7 +75,7 @@ section {
   justify-content: center;
   gap: 8px;
 
-  background: linear-gradient(45deg, #0a0a0a, #1a1a1a); /* Mörk gradient */
+  background: linear-gradient(45deg, #0a0a0a, #1a1a1a);
   border-radius: 12px;
   border: 2px solid rgba(255, 255, 255, 0.1);
   padding: 10px 20px;
@@ -85,16 +85,15 @@ section {
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 0 8px rgba(0, 255, 221, 0.08); /* Mycket subtil glow */
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
-/* Hover-effekt */
-.btn-base:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(0, 255, 221, 0.2);
-  border-color: rgba(0, 255, 221, 0.3);
+/* Innehållet i knappen */
+.btn-base > * {
+  position: relative;
+  z-index: 3;
 }
 
 /* Fokus: tillgänglighet */
@@ -103,36 +102,30 @@ section {
   outline-offset: 4px;
 }
 
-/* Ikon */
+/* Ikon i knappen */
 .btn-icon {
   font-size: 18px;
   transition: transform 0.3s ease;
 }
 
 .btn-base:hover .btn-icon {
-  transform: translateX(4px);
+  transform: translateX(6px) rotate(10deg);
 }
 
-/* Bakgrundsanimation */
 .btn-base::before {
   content: "";
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
+  top: -25%; /* Minska från -50% till -25% */
+  left: -25%; /* Minska från -50% till -25% */
+  width: 150%; /* Minska från 200% till 150% */
+  height: 150%; /* Minska från 200% till 150% */
   background: radial-gradient(
     circle,
-    rgba(255, 255, 255, 0.05),
+    rgba(131, 139, 131, 0.394),
     transparent 70%
   );
   animation: pulse 6s linear infinite;
   z-index: 0;
-}
-
-.btn-base > * {
-  position: relative;
-  z-index: 1;
 }
 
 @keyframes pulse {
@@ -140,11 +133,46 @@ section {
     transform: rotate(0deg) scale(1);
   }
   50% {
-    transform: rotate(180deg) scale(1.03);
+    transform: rotate(180deg) scale(1.02); /* Även lite mindre skalning */
   }
   100% {
     transform: rotate(360deg) scale(1);
   }
+}
+
+.btn-base::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(0, 255, 221, 0.2), transparent 60%);
+  transform: skewX(-20deg);
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+
+.btn-base:hover::after {
+  transform: translateX(200%) skewX(-20deg);
+}
+
+.btn-base::marker,
+.btn-base::selection {
+  display: none;
+}
+
+.btn-base::backdrop {
+  display: none;
+}
+
+.btn-base:hover::before {
+  box-shadow: 0 0 12px rgba(0, 255, 221, 0.3);
+}
+
+.btn-base:hover {
+  border-color: rgba(0, 255, 221, 0.3);
+  box-shadow: 0 0 15px rgba(0, 255, 221, 0.2);
 }
 
 .badge-list {
