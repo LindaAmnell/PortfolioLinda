@@ -115,10 +115,10 @@ section {
 .btn-base::before {
   content: "";
   position: absolute;
-  top: -25%; /* Minska från -50% till -25% */
-  left: -25%; /* Minska från -50% till -25% */
-  width: 150%; /* Minska från 200% till 150% */
-  height: 150%; /* Minska från 200% till 150% */
+  top: -25%;
+  left: -25%;
+  width: 150%;
+  height: 150%;
   background: radial-gradient(
     circle,
     rgba(131, 139, 131, 0.394),
@@ -133,7 +133,7 @@ section {
     transform: rotate(0deg) scale(1);
   }
   50% {
-    transform: rotate(180deg) scale(1.02); /* Även lite mindre skalning */
+    transform: rotate(180deg) scale(1.02);
   }
   100% {
     transform: rotate(360deg) scale(1);

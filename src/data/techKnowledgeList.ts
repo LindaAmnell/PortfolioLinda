@@ -14,4 +14,7 @@ export const techKnowledgeList = [
   { text: "Figma" },
   { text: "MongoDB" },
   { text: "Material UI" },
+  { text: "Tailwind CSS" },
+  { text: "Zustand" },
+  { text: "GIT" },
 ];

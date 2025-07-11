@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import { useEffect, useState } from "react";
 import HeaderLinks from "./components/HeaderLinks";
 import type { Section } from "./data/headerLinks";
+import Contact from "./components/Contact";
 
 function App() {
   const [activeSection, setActiveSection] = useState<Section>("about");
@@ -51,6 +52,7 @@ function App() {
               <AboutMe language={language} />
               <Experience language={language} />
               <Projects language={language} />
+              <Contact language={language} />
             </>
           ) : (
             <>
@@ -59,6 +61,7 @@ function App() {
                 <Experience language={language} />
               )}
               {activeSection === "projects" && <Projects language={language} />}
+              {activeSection === "contact" && <Contact language={language} />}
             </>
           )}
         </div>

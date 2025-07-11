@@ -6,7 +6,7 @@ const Projects = ({ language = "en" }) => {
   const projects = language === "sv" ? SvProjects : EnProjects;
 
   return (
-    <section className="projects-section">
+    <section>
       <div className="title-line mobile-only">
         <h2 className="title ">Projects</h2>
       </div>

@@ -32,3 +32,15 @@ export const infoText = {
     tech: "Teknisk kunskap",
   },
 };
+
+export const contactText = {
+  en: {
+    info: "Feel free to reach out for any inquiries, collaborations, or just to say hello! I’m always open to new opportunities and would love to hear from you.",
+    button: "Get in touch",
+  },
+
+  sv: {
+    info: "Tveka inte att höra av dig om du har frågor, vill samarbeta eller bara säga hej! Jag är alltid öppen för nya möjligheter och skulle gärna höra från dig.",
+    button: "Kontakta mig",
+  },
+};

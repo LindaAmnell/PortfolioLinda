@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { techKnowledgeList } from "../data/techKnowledgeList";
 import { infoText } from "../data/EnSweList";
 
-type Language = "en" | "sv";
+export type Language = "en" | "sv";
 
 interface InfoProps {
   language?: Language;

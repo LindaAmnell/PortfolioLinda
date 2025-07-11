@@ -65,7 +65,7 @@ body {
 
 @media (max-width: 1600px) {
   .info-section {
-    margin: 6em 5em 0 10em;
+    margin: 3em 5em 0 10em;
   }
   .switch-btn {
     margin: 2em 5em 0 10em;
@@ -73,7 +73,7 @@ body {
 }
 @media (max-width: 1350px) {
   .info-section {
-    margin: 3em 6em;
+    margin: 2em 6em;
   }
   .switch-btn {
     margin: 2em 5em 0 6em;
