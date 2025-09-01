@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    /* Output / compilation */
     "target": "ES2020",
     "module": "ESNext",
     "moduleResolution": "bundler",
@@ -9,25 +8,15 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
-
-    /* Library / environment */
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
-
-    /* TypeScript strictness / linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-
-    /* Type checking / dependencies */
-    "skipLibCheck": true,
-    "types": [],
-
-    /* Build info */
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "useDefineForClassFields": true
+    "skipLibCheck": true
   },
-  "include": ["src", "src/types"]
+  "include": ["src", "src/types"],
+  "exclude": ["node_modules", "**/__tests__/*"]
 }
