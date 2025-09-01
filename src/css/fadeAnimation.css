@@ -28,6 +28,13 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .fade-in {
+    animation: none !important;
+    transform: none;
+  }
+}
+
 /* .fade-in {
   animation: fadeLeft 0.6s ease-in-out;
 }

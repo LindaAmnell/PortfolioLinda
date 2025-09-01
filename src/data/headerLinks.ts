@@ -5,7 +5,7 @@ export const sections: { id: Section; label: string }[] = [
   { id: "about", label: "About me" },
   { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects" },
-  { id: "contact", label: "Contact" },
+  //   { id: "contact", label: "Contact" },
 ];
 
 // Svenska
@@ -13,5 +13,5 @@ export const sectionsSv: { id: Section; label: string }[] = [
   { id: "about", label: "Om mig" },
   { id: "experience", label: "Erfarenhet" },
   { id: "projects", label: "Projekt" },
-  { id: "contact", label: "Kontakt" },
+  //   { id: "contact", label: "Kontakt" },
 ];
